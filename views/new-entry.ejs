@@ -1,0 +1,75 @@
+<% include header %>
+<form method="post" role="form">
+  <div class="form-group container">
+    <div class="row">
+      <div class="col col-5">
+        <div class="dropdown">
+          <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            source language
+          </a>
+        
+          <ul class="dropdown-menu" id="sourceLang">
+            <li><a class="dropdown-item">en</a></li>
+            <li><a class="dropdown-item">zh-tw</a></li>
+            <li><a class="dropdown-item">ja</a></li>
+            <li><a class="dropdown-item">ko</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col col-2">
+      </div>
+      <div class="col col-5">
+        <div class="dropdown">
+          <a class="btn btn-success dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            target language
+          </a>
+        
+          <ul class="dropdown-menu" id="targetLang">
+            <li><a class="dropdown-item">en</a></li>
+            <li><a class="dropdown-item">zh-tw</a></li>
+            <li><a class="dropdown-item">ja</a></li>
+            <li><a class="dropdown-item">ko</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group container">
+    <div class="row">
+      <div class="col col-5">
+        <input type="text" class="form-control" id="beforeLang" name="beforeLang" value="en" style="background-color:#C0C0C0;">
+      </div>
+      <div class="col col-2">
+      </div>
+      <div class="col col-5">
+        <input type="text" class="form-control" id="afterLang" name="afterLang" value="zh-tw" style="background-color:#C0C0C0;">
+      </div>
+    </div>
+  </div>
+  <div class="form-group container">
+    <div class="row">
+      <div class="col col-5">
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="world" id="before" name="before" style="height: 100px; background-color:#C0C0C0;" required></textarea>
+        </div>
+      </div>
+      <div class="col col-2">
+        <p class="text-center">
+        ->
+        </p>
+      </div>
+      <div class="col col-5">
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="世界" id="after" name="after" style="height: 100px; background-color:#C0C0C0"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="form-group container">
+    <input type="submit" value="Post entry" class="btn btn-primary">
+  </div>
+</form>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="/new.js" ></script>
+<% include footer %>

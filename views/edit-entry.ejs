@@ -1,0 +1,27 @@
+<% include header %>
+<h2>Edit entry</h2>
+<form method="post" role="form">
+  <div class="form-group">
+    <label for="language">source language</label>
+    <input type="text" class="form-control" id="language" name="language" disabled value=<%=language %> required>
+  </div>
+  <div class="form-group">
+    <label for="content">text</label>
+    <textarea class="form-control" id="text" name="text" rows="3" required><%=text%></textarea>
+  </div>
+  <div class="form-group">
+    <label for="target">target language</label>
+    <input type="text" class="form-control" id="target" name="target" disabled value=<%=target %> required>
+  </div>
+  <div class="form-group">
+    <input type="submit" value="Post entry" class="btn btn-primary">
+  </div>
+  <div class="form-group invisible">
+    <label for="content">number</label>
+    <textarea class="form-control" id="number" name="number"><%=number%></textarea>
+  </div>
+</form>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 
+<script type="text/javascript" src="/edit.js" ></script>
+<% include footer %>
